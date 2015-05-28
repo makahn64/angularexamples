@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- App Usually Defined on the HTML Tag -->
+<html ng-app="helloApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Hello Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
+  <script src="helloAngular.js"></script>
+
+</head>
+
+<!-- Controllers can be on any element, here it's on the body and that's what we usually do -->
+
+<body ng-controller="mainController">
+
+<h1>Data Binding and Clicks</h1>
+<br>
+
+<h2>Hello {{name}}</h2>
+<button ng-click="clear()">Clear</button>
+<input type="text" ng-model="name" placeholder="Name">
+<br>
+<button ng-click="clicked()">Dude</button>
+<br>
+
+<hr>
+<h2>Using ngRepeat</h2>
+<ul>
+  <li ng-repeat="item in shoppingList">{{item}} <span ng-click="removeItem($index)" style="color: red">[ REMOVE ]</span></li>
+</ul>
+<input type="text" ng-model="newItem" placeholder="New Item"/><button ng-click="addItem()">Add</button>
+
+</body>
+</html>
