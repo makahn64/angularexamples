@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- App Usually Defined on the HTML Tag -->
+<html ng-app="directiveApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Hello Angular</title>
+
+  <!-- Import all JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
+  <script src="appAndController.js"></script>
+  <script src="listWithAdd.directive.js"></script>
+  <script src="listService.js"></script>
+
+  <!-- Get the stylesheet -->
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+
+<!-- Controllers can be on any element, here it's on the body and that's what we usually do -->
+
+<body>
+
+<div class="well" ng-controller="mainController">
+
+  <h2>Controlled by: {{controllerName}}</h2>
+  <br>
+
+  <list-with-add list="list1" title-color="#FF0000"></list-with-add>
+  <list-with-add list="list2" title-color="#FF0000"></list-with-add>
+  <list-with-add list="list3" title-color="#FF0000"></list-with-add>
+
+</div>
+
+<div class="well" ng-controller="secondController">
+
+  <h2>Controlled by: {{controllerName}}</h2>
+
+  <p>Add Item <input type="text" ng-model="newItem"/></p>
+
+  <p>To List <input type="text" ng-model="targetList"/></p>
+  <button ng-click="addThruService()">Do It</button>
+
+</div>
+
+<div class="popup" ng-controller="spyController">
+  <h2>{{controllerName}}</h2>
+  <p>{{message}}</p>
+</div>
+
+</body>
+</html>

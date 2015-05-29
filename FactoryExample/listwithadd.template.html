@@ -1,0 +1,7 @@
+<div>
+  <h3 ng-style="{ color: titleColor }">{{list.title}}</h3>
+  <ul>
+    <li ng-repeat="item in list.items">{{item}}</li>
+  </ul>
+  <input type="text" ng-model="newItem"/><button ng-click="add()">Add</button>
+</div>

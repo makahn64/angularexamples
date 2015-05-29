@@ -1,0 +1,16 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* change well to make them line up in columns and add a faint drop shadow */
+
+.well {
+    margin: 20px;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 450px;
+    border: 2px solid #e0e0e0;
+}
+
+/* add a new entry that changes the drop shadow to make the well look like it is rising up when the mouse hovers over it */
+
