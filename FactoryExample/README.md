@@ -9,6 +9,13 @@ Building on Yesterday
 
 When that's done, we move on to the FactoryExample.
 
+You will need to cd into the angularexamples directory and do the following:
+* git commit -m "commiting my local changes"
+* git pull origin master (this will pull the FactoryExample)
+
+Feel free to figure out how to do this directly from PHPStorm.
+
+
 
 FACTORY EXAMPLE
 ---------------
