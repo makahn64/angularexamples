@@ -3,7 +3,7 @@ Building on Yesterday
 
 * Take the SimpleDirective example and make the lists sort alphabetically. The only changes allowed are to the html template.
 * Add a filter text field to the listWithAdd directive that allows filtering of the list. Make the filter text field hide and show
-  via an attribute in the directive like: <list-with-add show-filter list="list1" title-color='#ffee00'></...>. You will be 
+  via an attribute in the directive like: \<list-with-add show-filter list="list1" title-color='#ffee00'></...>. You will be 
   changing the code for the link function in the directive and the template.
 * This page might help, but GOOGLE IT: http://www.programming-free.com/2013/10/exploring-angularjs-built-in-filters.html
 
