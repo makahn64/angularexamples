@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- App Usually Defined on the HTML Tag -->
+<html ng-app="routerApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Hello Angular</title>
+
+  <!-- Import all JS -->
+  <script src="assets/bower_components/angular/angular.js"></script>
+  <script src="assets/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="assets/bower_components/angular-route/angular-route.js"></script>
+  <script src="app/routerapp.module.js"></script>
+   <script src="app/routerapp.routes.js"></script>
+
+
+  <!-- Get the stylesheet -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.css" type="text/css"/>
+
+</head>
+
+<!-- Controllers can be on any element, here it's on the body and that's what we usually do -->
+
+<body>
+
+  <div ng-view></div>
+
+</body>
+</html>
