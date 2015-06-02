@@ -10,6 +10,7 @@ html {
     min-width: 300px;
     max-width: 450px;
     border: 2px solid #e0e0e0;
+    float: left;
 }
 
 /* add a new entry that changes the drop shadow to make the well look like it is rising up when the mouse hovers over it */

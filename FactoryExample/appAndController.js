@@ -6,7 +6,6 @@
 var app = angular.module("directiveApp", []);
 
 
-//NOTICE THE DEPENDENCY INJECTION!!-------------------VVVVV
 app.controller("mainController", function ($scope, listService) {
 
     $scope.controllerName = "CtrlOne";

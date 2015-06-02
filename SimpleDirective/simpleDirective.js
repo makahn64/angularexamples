@@ -34,7 +34,7 @@ app.directive('listWithTitle', function () {
         scope: {
             list: "="
         },
-        template: '<h3>{{list.title}}</h3><ul><li ng-repeat="item in list.items">{{item}}</li></ul>'
+        template: '<h3 style="color: blue">{{list.title}}</h3><ul><li ng-repeat="item in list.items">{{$index}}&nbsp;{{item}}</li></ul>'
     };
 });
 
@@ -48,9 +48,19 @@ app.directive('listWithAdd', function () {
         },
         link: function(scope, elem, attr){
 
-            scope.add = function(){
-                scope.list.push(scope.newItem);
+            scope.titleColor = "#000000";
+
+            if (attr.titleColor!==undefined){
+                console.log("I got a color! "+ attr.titleColor);
+                scope.titleColor = attr.titleColor;
+
             }
+
+            scope.add = function(){
+                scope.list.items.push(scope.newItem);
+            }
+
+
 
         },
         templateUrl: 'listwithadd.template.html'
