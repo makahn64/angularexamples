@@ -1,0 +1,7 @@
+<div class="container">
+  <input ng-model="filterName" placeholder="Winery Name" style="width: 300px">
+  <div ng-repeat="winery in wineries | filter: { name: filterName } | orderBy: 'name'">
+    <h3>{{winery.name}}</h3>
+    <p>{{winery.description}}</p>
+  </div>
+</div>

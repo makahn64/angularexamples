@@ -1,0 +1,69 @@
+<div class="container">
+  <h2>To-Do List</h2>
+  <p>You have completed <span style="font-size: 2rem" class="text-danger">{{getPercentage()}}</span> of your tasks.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <h3>$http and JSON GET</h3>
+      <label>
+        <input type="checkbox" ng-model="model.http1">
+        Understand $http GET
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.http2">
+        Set a breakpoint in the .success methods of getWinery and getWines and look at return data JSON.
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.http3">
+        Figure out what $parent does
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.http4">
+        <span class="text-info">Later/Xtra Credit:</span> Extract $http calls into a separate service and use $q
+        promises
+        to return the data and status. Don't forget about dependency injection. You have not learned about promises yet,
+        so
+        you're going to need to figure this out on your own.
+      </label>
+
+    </div>
+    <div class="col-md-4">
+      <h3>Content and Design Tasks</h3>
+      <label>
+        <input type="checkbox" ng-model="model.des1">
+        Replace the simple ng-repeat div for Winery description with a "winery" directive. The directive should show the
+        title,
+        description, website and phone number. Be creative and use some Bootstrap elements to make it look nice.
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.des2">
+        Replace the simple ng-repeat div for Wine description with a "wine" directive. The directive should show the
+        title,
+        description, other info (your choice from JSON). Be creative and use some Bootstrap elements to make it look
+        nice.
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.des3">
+        Re-style the links on the home page according to what it says there.
+      </label>
+
+
+    </div>
+    <div class="col-md-4">
+      <h3>Other</h3>
+      <label>
+        <input type="checkbox" ng-model="model.other1">
+        Figure out how this app is remembering your todo state, even after you re-load it.
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.other2">
+        Fix the % done to limit the precision to one place after the decimal place (i.e. 33.3%). The cool angular kids would use
+        a filter for this. Be a cool kid.
+      </label>
+      <label>
+        <input type="checkbox" ng-model="model.other3">
+        Show only a loading spinner (GIF) when the getWineries and getWines is running. Hint: you will have 2 divs that ng-hide or
+        ng-show based on the same $scope property. Animated GIF spinners are widely available on the interweb.
+      </label>
+    </div>
+  </div>
+</div>
