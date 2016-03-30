@@ -75,3 +75,15 @@ Windows
  debugging using the JetBrains plug in and also shows you how to do debugging through the Javascript console.
  
  
+ 
+ LESSON: HELLO ANGULAR
+ =====================
+ 
+ You're going to learn some simple stuff here:
+ 1) How to do the most basic of AngularJS apps
+ 2) How the DOM and the JS work together via $scope binding
+ 3) How to handle button events, input boxes with Angular
+ 4) How to use ng-repeat, one of the awesomest features of basic angular
+ 5) How to debug using Webstorm and the Chrome debugger
+ 
+ 

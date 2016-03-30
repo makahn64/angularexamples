@@ -14,28 +14,28 @@ app.controller("mainController", function ($scope) {
     //I am also hidden from the global namespace, but since I am "$scope", I am visible to the DOM
     $scope.name = "John Smith";
 
+    // Some more variables, also visible in the DOM.
+    $scope.shoppingList = [ 'Eggs', 'Bread', 'Butter' ];
+    
+    $scope.newItem = undefined; //Not strictly necessary, it's undefined by default in JS.
+
     //You can attach a function to the $scope and make it visible to the DOM
     $scope.clicked = function(){
         console.log("I have been clicked");
-        $scope.name = $scope.name + '...' + localVar;
+        //$scope.name = $scope.name + '...' + localVar;
     }
 
     $scope.clear = function(){
         $scope.name = "";
     }
-
-    // Shopping list mini-app
-    // There is a bug in here -> FIND IT and fix it
-
-    $scope.shoppingList = [ 'Eggs', 'Bread', 'Butter'];
-    $scope.newItem = undefined; //Not strictly necessary
+    
 
     $scope.addItem = function() {
-        $scope.shoppingList.push($scope.newItem);
+        // Add an item to the shopping list
     }
 
     $scope.removeItem = function(index){
-        $scope.shoppingList = $scope.shoppingList.slice(index, 1);
+        // Delete an item from the shopping list
     }
 
 });
