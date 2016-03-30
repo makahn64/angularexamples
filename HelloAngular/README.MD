@@ -71,7 +71,7 @@ Windows
  PROJECT SETUP
  =============
  
- Have a Google hangout with Mitch on setting up the project in Webstorm.
- 
+ Have a Google hangout with Mitch on setting up the project in Webstorm. Make sure he sets you up with in-Webstorm
+ debugging using the JetBrains plug in and also shows you how to do debugging through the Javascript console.
  
  
