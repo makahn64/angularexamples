@@ -27,42 +27,6 @@ app.controller("mainController", function ($scope) {
 
 });
 
-//HOMEWORK: Make this sort alphabetically. Hint: it's very little work
-
-app.directive('listWithTitle', function () {
-    return {
-        scope: {
-            list: "="
-        },
-        template: '<h3 style="color: blue">{{list.title}}</h3><ul><li ng-repeat="item in list.items">{{$index}}&nbsp;{{item}}</li></ul>'
-    };
-});
-
-
-//HOMEWORK: There's a bug in the directive below. Fix it.
-
-app.directive('listWithAdd', function () {
-    return {
-        scope: {
-            list: "="
-        },
-        link: function(scope, elem, attr){
-
-            scope.titleColor = "#000000";
-
-            if (attr.titleColor!==undefined){
-                console.log("I got a color! "+ attr.titleColor);
-                scope.titleColor = attr.titleColor;
-
-            }
-
-            scope.add = function(){
-                scope.list.items.push(scope.newItem);
-            }
 
 
 
-        },
-        templateUrl: 'listwithadd.template.html'
-    };
-});
