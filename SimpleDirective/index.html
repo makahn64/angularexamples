@@ -2,12 +2,15 @@
 <!-- App Usually Defined on the HTML Tag -->
 <html ng-app="directiveApp">
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>Hello Angular</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
-  <script src="SimpleDirective.js"></script>
-  <script src="directives/ListWithTitle.directive.js"></script>
-  <script src="directives/ListWithAdd.directive.js"></script>
+    <meta charset="UTF-8">
+    <title>Hello Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
+    <script src="SimpleDirective.js"></script>
+    <script src="directives/ListWithTitle.directive.js"></script>
+    <script src="directives/ListWithAdd.directive.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
 
@@ -15,13 +18,16 @@
 
 <body ng-controller="mainController">
 
-<h1>Simple List Directive</h1>
-<br>
+<div class="container">
+    <div class="row">
+        <h1>Simple List Directive</h1>
 
-  <list-with-title list="list1"></list-with-title>
-  <list-with-title list="list2"></list-with-title>
+        <list-with-title list="list1"></list-with-title>
+        <list-with-title list="list2"></list-with-title>
 
-  <list-with-add list="list3" title-color="#FF0000"></list-with-add>
+        <list-with-add list="list3" title-color="#FF0000"></list-with-add>
+    </div>
+</div>
 
 </body>
 </html>

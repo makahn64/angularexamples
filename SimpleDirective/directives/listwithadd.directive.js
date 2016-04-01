@@ -21,6 +21,7 @@ app.directive( 'listWithAdd', function () {
 
             scope.add = function () {
                 scope.list.items.push( scope.newItem );
+                scope.newItem = "";
             }
 
 

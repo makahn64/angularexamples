@@ -9,6 +9,6 @@ app.directive( 'listWithTitle', function () {
         scope:    {
             list: "="
         },
-        template: '<h3 style="color: blue">{{list.title}}</h3><ul><li ng-repeat="item in list.items">{{$index}}&nbsp;{{item}}</li></ul>'
+        templateUrl: 'directives/listwithtitle.template.html'
     };
 } );

@@ -1,7 +1,19 @@
-<div>
-  <h3 ng-style="{ color: titleColor }">{{list.title}}</h3>
-  <ul>
-    <li ng-repeat="item in list.items">{{item}}</li>
-  </ul>
-  <input type="text" ng-model="newItem"/><button ng-click="add()">Add</button>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 ng-style="{ color: titleColor }">
+            {{list.title}}
+            <span style="float: right;">
+                <button ng-click="add()" class="btn btn-default">
+                Add
+                </button>
+                 <input type="text" ng-model="newItem" placeholder="Add a show"/></span></h3>
+
+    </div>
+    <div class="panel-body">
+        <ul>
+            <ol ng-repeat="item in list.items">{{$index+1}}.&nbsp;{{item}}</ol>
+        </ul>
+    </div>
+
+
 </div>
