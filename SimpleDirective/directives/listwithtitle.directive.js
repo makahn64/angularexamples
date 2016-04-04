@@ -12,3 +12,12 @@ app.directive( 'listWithTitle', function () {
         template: '<h3>{{list.title}}</h3><ul><li ng-repeat="item in list.items">{{item}}</li></ul>'
     };
 } );
+
+
+app.directive( 'thisIsStupid', function(){
+
+    return {
+        template: '<h1>This is really Stupid</h1>'
+    }
+
+});

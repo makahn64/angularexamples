@@ -17,7 +17,7 @@ app.controller("mainController", function ($scope) {
     // This is a Javascript "object literal". Google it. :)
     $scope.list1 = {
         title: 'Guys on the Hall',
-        items: ['Steve', 'John', 'Frank', 'Bob']
+        items: ['Steve', 'John', 'Frank', 'Bob', 'Ryan']
     }
 
     $scope.list2 = {
@@ -29,7 +29,7 @@ app.controller("mainController", function ($scope) {
         title: 'TV Shows I Like',
         items: ['Mad Men', 'Game of Thrones', 'The Wire', 'Billions']
     }
-
+    
 
 });
 

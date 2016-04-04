@@ -50,6 +50,7 @@ Now that you understand how that works, add some more functionality to `list-wit
 to indicate the change.
 3. Make both of the above functions optional and only show if the attibute `show-remove` and/or `show-sort` are set.
 
+
 LET'S MAKE IT A LITTLE PRETTIER
 -------------------------------
 
