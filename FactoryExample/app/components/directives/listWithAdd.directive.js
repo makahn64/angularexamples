@@ -24,6 +24,6 @@ app.directive('listWithAdd', function () {
 
 
         },
-        templateUrl: 'listwithadd.template.html'
+        templateUrl: 'app/components/directives/listwithadd.template.html'
     };
 });

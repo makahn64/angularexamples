@@ -54,6 +54,7 @@ app.factory('listService', function(){
 
         return rval;
     }
+    
 
     return service;
 

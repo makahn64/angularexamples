@@ -19,13 +19,17 @@ app.controller("mainController", function ($scope, listService) {
 
 
 //NOTICE THE DEPENDENCY INJECTION!!-------------------VVVVV
-app.controller("secondController", function ($scope, listService) {
+app.controller("secondController", function ($scope, listService, $rootScope) {
 
     $scope.controllerName = "CtrlTwo";
 
     $scope.addThruService = function(){
         listService.addItem($scope.targetList, $scope.newItem);
+
+        $rootScope.$broadcast("SOMEMSG", $scope.newItem);
+
     }
+
 });
 
 
@@ -35,6 +39,10 @@ app.controller("spyController", function ($scope, listService) {
     $scope.controllerName = "Popup!";
 
     $scope.message = "No message";
+
+    $scope.$on("SOMEMSG", function(event, arg){
+        console.log("Got a msg");
+    })
 
 });
 

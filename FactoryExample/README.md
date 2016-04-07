@@ -41,3 +41,4 @@ To Do On Your Own
   5 seconds. Look at setTimeout and $timeout and try to understand why you never use setTimeout in Angular.
   
   
+  [VIEW] <--> [CONTROLLER (ViewController)] <-----> [ MODEL (Business Logic) ]
