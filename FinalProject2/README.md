@@ -25,3 +25,17 @@ only the Guest page is defined (USer Story 2). But put in stubs of the controlle
 
 The links should appear not as a list, but as flat bootstrap buttons. The buttons should grow slightly when the mouse
 is hovered over them.
+
+
+User Story #2
+-------------
+
+The Guest page is a bit rough. The page should say "Guests" at the top (under the banner) and the guests should be
+shown as table with the headings First Name, Last Name, Email. There needs to be a filter input box at the op of the
+table (above it), that implements a live filtering of all fields in each guest object (this is insanely easy in 
+Angular, so if you are writing a lot of code, you are doing it wrong.)
+
+Each user should have a "more info" button on their table row. That button will open a popup that will show all
+the JSON Information in the Guest. A finished button will be at the bottom of the popup to close it.
+
+Make extensive use of Bootstrap and UI-Bootstrap in this part. No angular material (sorry, Ryan! :))
