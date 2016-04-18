@@ -11,6 +11,8 @@ app.controller("screen1Controller", function($scope, $log, $timeout){
         $scope.message = "Here it is!";
         $log.warn("Here's a pretty error message.");
     }, 5000);
+
+
     
 
 });

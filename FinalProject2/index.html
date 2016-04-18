@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- App Usually Defined on the HTML Tag -->
+<html ng-app="finalApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+
+  <!-- Import all JS -->
+  <script src="assets/bower_components/angular/angular.js"></script>
+  <script src="assets/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="assets/bower_components/angular-route/angular-route.js"></script>
+  <script src="app/finalApp.module.js"></script>
+  <script src="app/finalApp.routes.js"></script>
+  <script src="app/components/home/homeController.js"></script>
+  <script src="app/shared/a8api/ngA8API2.js"></script>
+  <script src="app/components/guests/guestsController.js"></script>
+
+
+  <!-- Get the stylesheets -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+
+</head>
+
+<!-- Controllers can be on any element, here it's on the body and that's what we usually do -->
+
+<body>
+<div class="top_banner">
+  <img src="assets/img/oplogo.png">
+</div>
+
+<div ng-view></div>
+
+</body>
+</html>

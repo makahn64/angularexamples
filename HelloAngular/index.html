@@ -25,8 +25,10 @@
 <br>
 
 <hr>
-<h2>Using ngRepeat</h2>
+<h2>Using ngRepeat {{ shoppingList[0] }}</h2>
+<input ng-model="filterVal" type="text" placeholder="filter"/>
 <ul>
+  <li ng-repeat="item in shoppingList | filter: filterVal | orderBy">{{ item }}</li>
   <!-- Insert code here to show all items in the shopping list and then add a button to delete each item from the list -->
 </ul>
   <!-- Insert code here to add an item to the list. Hint: an input box and a button might be good! -->

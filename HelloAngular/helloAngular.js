@@ -6,17 +6,31 @@
 var app = angular.module("helloApp", []);
 
 
+
 app.controller("mainController", function ($scope) {
 
     //I am hidden from the global namespace and not visible to the DOM
     var localVar = "dude";
 
     //I am also hidden from the global namespace, but since I am "$scope", I am visible to the DOM
-    $scope.name = "John Smith";
+    $scope.name = "John Smith Jr.";
 
     // Some more variables, also visible in the DOM.
-    $scope.shoppingList = [ 'Eggs', 'Bread', 'Butter' ];
-    
+    $scope.shoppingList = [ 'Eggs', 'Bread', 'Butter', 'Lettuce' ];
+
+
+    var myObj = {
+
+        topVal: 100,
+        nestObj: {
+            stackOfCups: 20,
+            sayHi: function(){ console.log("hi!")}
+
+        }
+
+    }
+
+
     $scope.newItem = undefined; //Not strictly necessary, it's undefined by default in JS.
 
     //You can attach a function to the $scope and make it visible to the DOM
@@ -28,7 +42,7 @@ app.controller("mainController", function ($scope) {
     $scope.clear = function(){
         $scope.name = "";
     }
-    
+
 
     $scope.addItem = function() {
         // Add an item to the shopping list

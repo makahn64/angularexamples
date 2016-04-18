@@ -2,7 +2,8 @@
  * Created by mkahn on 6/1/15.
  */
 
-app.config(function ($routeProvider) {
+app.config( function ($routeProvider) {
+    
     $routeProvider
 
         // route for the home page
