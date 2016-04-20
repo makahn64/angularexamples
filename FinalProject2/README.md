@@ -39,3 +39,26 @@ Each user should have a "more info" button on their table row. That button will 
 the JSON Information in the Guest. A finished button will be at the bottom of the popup to close it.
 
 Make extensive use of Bootstrap and UI-Bootstrap in this part. No angular material (sorry, Ryan! :))
+
+User Stroy #3
+-------------
+
+In this system, Guests go thru a marketing Experience. To get a list of Experiences, use the A8API module and `getResource`
+on `'experience'`. This will return a JSON list of experiences. You can see the JSON here: 
+
+http://162.243.133.57:1337/api/v2/experience.
+
+We want a pretty table grouped by Guest Name. The table
+will have the following columns:
+
+Experiences for Jane Smith (jsmith@gmail.com)
+
+[DATE (human readable)] | [EXPERIENCE NAME] | [ SCORE ] | [IMAGE from EXPERIENCE]
+[DATE (human readable)] | [EXPERIENCE NAME] | [ SCORE ] | [IMAGE from EXPERIENCE]
+[DATE (human readable)] | [EXPERIENCE NAME] | [ SCORE ] | [IMAGE from EXPERIENCE]
+
+The image should be no wider than 300px.
+
+There is a filter box at the top that lets me filter by email address or first/last name ONLY. 
+
+The experience table + headings must be implemented as a single Angular directive.
