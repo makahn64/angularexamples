@@ -33,11 +33,11 @@ Ubuntu
 
 Ubuntu boxes may or may not have the LAMP stack installed.
 
-You can find this out easily enough by doing a `ps aux | grep apache` in a temrinal window. You should see two entries 
+You can find this out easily enough by doing a `ps aux | grep apache` in a terminal window. You should see two entries 
 if Apache (the webserver part of LAMP) is running. One entry is for Apache2, the other for the `grep` you ran. If you 
 only see the `grep` entry, you need to install and get running LAMP.
 
-You can also got to `http:\\localhost` or `http:\\127.0.0.1` and see if you get a webpage. This is not entirely
+You can also got to `http://localhost` or `http://127.0.0.1` and see if you get a webpage. This is not entirely
 reliable since we have seen times when the server is running, but some clever person has put a forced redirect page
 in the `docroot`.
 
@@ -50,7 +50,7 @@ Make a logical link from `/var/www/html/dev` to your HTML/JS development folder 
 of Apache2 may use a docroot of `/var/www/htdocs`.  Don't know how to use the `ln -s` command? Google it.
    
 If you have let this up right, you should be able to access these projects through 
-`http:\\localhost\dev\angularexamples\HelloAngular` for example.
+`http://localhost/dev/angularexamples/HelloAngular` for example.
    
 Mac
 ---
@@ -58,7 +58,13 @@ Mac
 On the Mac we use MAMP. Download it, install it. You are done. Almost. You will need to set the HTTP port to 80 in settings.
 That's it.
 
-The docroot for MAMP is `/Applications/MAMP/htdocs`. Make a logical link as mentioned above to your `Developer` folder.
+The docroot for MAMP is `/Applications/MAMP/htdocs`. 
+
+Make a logical link from `/Applications/MAMP/htdocs/training` to your Make a logical link to your `~/Developer/training` folder. 
+Don't know how to use the `ln -s` command? Google it.
+   
+If you have let this up right, you should be able to access these projects through 
+`http://localhost/training/angularexamples/HelloAngular` for example.
 
 Windows
 -------
