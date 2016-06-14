@@ -1,0 +1,5 @@
+- Download wineries
+- Display first as LI then make directive
+- Have the directive respond to data (first letter of venue)
+- have directive change background color due to a button press
+- Add a filter to filter thru wineries

@@ -6,7 +6,7 @@
   <title>Hello Angular</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
   <script src="simpleDirective.js"></script>
-  <script src="directives/listwithadd.template.html"></script>
+  <script src="directives/listwithadd.directive.js"></script>
   <script src="directives/listwithtitle.directive.js"></script>
 
 </head>
@@ -23,7 +23,9 @@
   <list-with-title list="list1"></list-with-title>
   <list-with-title list="list2"></list-with-title>
 
-  <list-with-add list="list3" title-color="#FF0000"></list-with-add>
+  <list-with-add list="list3" title-color="#FF0000" font-size="100px"></list-with-add>
+
+  <this-is-stupid></this-is-stupid>
 
 </body>
 </html>
