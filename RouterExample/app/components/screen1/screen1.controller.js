@@ -2,7 +2,7 @@
  * Created by mkahn on 4/6/16.
  */
 
-app.controller("screen1Controller", function($scope, $log, $timeout){
+app.controller("screen1Controller", [ '$scope', '$log', '$timeout', '$location', function($scope, $log, $timeout, $location){
 
 
     $scope.message = "Wait for it...";
@@ -13,6 +13,8 @@ app.controller("screen1Controller", function($scope, $log, $timeout){
     }, 5000);
 
 
-    
+    $scope.goHome = function(){
+        $location.path("/");
+    }
 
-});
+}]);

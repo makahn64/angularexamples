@@ -5,14 +5,17 @@
     <title>Let's Hack Together</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
-
+    <script src="assets/bower_components/lodash/dist/lodash.min.js"></script>
 
     <script src="app/app.js"></script>
     <script src="app/shared/winex.service.js"></script>
     <script src="app/components/WineryList/wineryList.controller.js"></script>
+    <script src="app/shared/WineryCardDirective/winerycard.directive.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/lht.css"/>
 
 </head>
 <body ng-controller="wineryListController">
@@ -21,14 +24,12 @@
         <h1>Wineries</h1>
     </div>
     <h2 ng-show="ui.loading">Loading the super fun winery list, yeah!</h2>
+    <h2 ng-if="ui.error">{{ ui.error }}</h2>
     <div ng-hide="ui.loading">
-        <div ng-repeat="winery in ui.wineries | orderBy: 'name'" class="panel">
-            <img src=""
-            <h1 class="panel-heading">{{ winery.name }}</h1>
-            <h2>{{ winery.regions.majorRegion ?
-                winery.regions.majorRegion : "NFC" }}</h2>
-        </div>
-
+        <input type="text" placeholder="filter text" ng-model="filterTerm"/>
+        <winery-card ng-repeat="winery in ui.wineries | orderBy: 'name' | filter: filterTerm"
+                     winery="winery" remove="deleteFromList"
+                     highlight="{{ $index%2 }}"></winery-card>
     </div>
 
 </div>

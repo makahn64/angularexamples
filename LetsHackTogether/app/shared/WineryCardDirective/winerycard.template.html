@@ -1,0 +1,12 @@
+<div class="og-card" ng-class="{ 'highlighted' : ui.highlighted }" >
+    <div class="og-card-logo" ng-class="{ 'testing': ui.testing }">
+        <img og-media media-id="{{ winery.logoId }}"/>
+    </div>
+    <div class="og-card-text" ng-class="{ 'testing': ui.testing }">
+        <h1>{{ winery.name }}</h1>
+        <h2>{{ winery.regions.majorRegion ?
+            winery.regions.majorRegion : "NFC" }}</h2>
+        <button class="btn btn-danger" ng-click="delete()">Nuke Me</button>
+    </div>
+
+</div>

@@ -6,7 +6,7 @@ app.factory("winexLite", function($http, $log){
 
     service = {};
 
-    var serverEndpoint = "http://192.241.228.100:1338";
+    var serverEndpoint = "http://192.241.228.100:1335";
     var apiRev = "/api/v1/";
     var apiEndpoint = serverEndpoint + apiRev;
 
@@ -27,7 +27,12 @@ app.factory("winexLite", function($http, $log){
             })
     
     }
-    
+
+    service.getMediaUrlForId = function(mediaId){
+
+        return serverEndpoint+'/media/download/'+mediaId;
+
+    }
     
     service.hello = function(){
         $log.debug("Howdy from Ourglass!");
