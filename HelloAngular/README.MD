@@ -42,3 +42,11 @@ If you want to set up a local Apache webserver, checkout the APACHE.MD.
  5) How to debug using Webstorm and the Chrome debugger
  
  
+ TODO
+ ====
+ 
+ 1. When the Dude button is clicked, append "Dude" after the name.
+ 2. Add a input box and button to add items to the shopping list.
+ 3. Add a button to each item in the shopping list to remove from the list
+ 4. When the list is empty, it should say "Nothing in list".
+ Extra Credit. Use ngAnimate to animate the filtering of the list with opacity transitions.

@@ -17,12 +17,15 @@
 <h1>Data Binding and Clicks</h1>
 <br>
 
-<h2>Hello {{name}}</h2>
+<div style="border: 3px solid deeppink; border-radius: 3px; padding: 10px;" ng-controller="divController">
+<h2>Hello {{name | uppercase }}</h2>
+<p>DUDE: {{ localVar }}</p>
 <button ng-click="clear()">Clear</button>
 <input type="text" ng-model="name" placeholder="Name">
 <br>
 <button ng-click="clicked()">Dude</button>
 <br>
+</div>
 
 <hr>
 <h2>Using ngRepeat {{ shoppingList[0] }}</h2>
